@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mik.create_storagedrawers_compat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DrawerItemHandlerAccessor",
+    "MixinStorageDrawersThresholdCompat",
+    "MixinThresholdSwitchBlockEntity",
+    "MixinDefaultUnpackingHandler"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

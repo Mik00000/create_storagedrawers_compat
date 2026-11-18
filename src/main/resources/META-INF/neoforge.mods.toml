@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="create_storagedrawers_compat"
+version="1.0.0"
+displayName="Create & Storage Drawers Compat"
+description="Fixes interoperability between Create and StorageDrawers (Packager unpack simulation and Stockpile Switch 128 cap)."
+authors="mik"
+displayTest="IGNORE_ALL_VERSION"
+
+[[mixins]]
+config="create_storagedrawers_compat.mixins.json"
+
+[[dependencies.create_storagedrawers_compat]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.create_storagedrawers_compat]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.create_storagedrawers_compat]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.create_storagedrawers_compat]]
+    modId="storagedrawers"
+    type="required"
+    versionRange="[13.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
